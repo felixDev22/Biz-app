@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'about', to: 'about#index'
-  
-  # root "main#index"
+  devise_for :users
+  resources :user
+  resources :categories
+  resources :transactions
+  root "splash#index"
 end
