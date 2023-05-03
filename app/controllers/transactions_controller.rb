@@ -3,6 +3,9 @@ class TransactionsController < ApplicationController
 
   def index
     @transactions = Transaction.all
+    @category = Category.find(params[:category_id])
+    @transactions = @category.transactions.order(created_at: :desc)
+    @total = @category.transactions.sum(:amount)
   end
 
   def show; end
@@ -14,7 +17,8 @@ class TransactionsController < ApplicationController
   def edit; end
 
   def create
-    @transaction = Transaction.new(transaction_params)
+    @transaction = Transaction.create(transaction_params)
+    @transaction.author = current_user
 
     respond_to do |format|
       if @transaction.save
@@ -55,6 +59,6 @@ class TransactionsController < ApplicationController
   end
 
   def transaction_params
-    params.require(:transaction).permit(:name, :amount)
+    params.require(:transaction).permit(:name, :amount, :category_id)
   end
 end
