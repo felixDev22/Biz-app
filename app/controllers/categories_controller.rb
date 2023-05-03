@@ -9,6 +9,7 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
+    @category = current_user.categories.new
   end
 
   def edit; end
@@ -16,6 +17,7 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     @category.user_id = current_user
+    @category = current_user.categories.build(category_params)
 
     respond_to do |format|
       if @category.save
