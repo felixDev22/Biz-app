@@ -3,13 +3,13 @@ require 'rails_helper'
 RSpec.describe Category, type: :model do
   context 'validation tests' do
     before(:each) do
-      first_user = User.create(name: 'Felix', email: 'test@gmail.com', password: 'test12345')
+      first_user = User.create(id: 1, name: 'Felix', email: 'test@gmail.com', password: 'test12345')
       icon = fixture_file_upload(Rails.root.join('spec/fixtures/icons/uber.png'), 'image/png')
       @category = Category.create(name: 'Travel', icon:, user_id: first_user.id)
     end
 
     it 'is created successfully' do
-      expect(@category.save).to eq false
+      expect(@category.save).to eq true
     end
 
     it 'is invalid without a name' do
