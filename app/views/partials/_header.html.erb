@@ -1,12 +1,11 @@
-
-<nav class="nav">
-  <div class="nav-items">
-    <i class="bi bi-list"></i>
-    <p class="fs-2"><%= page %></p>
-    <i class="bi bi-search"></i>
- </div>
-  <div class="sign-out">
-    <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "form-control me-2 p-3" %>
+<nav class="header">
+  <div class="brand">
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo-img") %>
   </div>
-   
+  <div class="text-center">
+    <p><%= page %></p>
+  </div>
+  <div class="sign-out">
+    <%= link_to "sign out", destroy_user_session_path, method: :delete %>
+  </div>
 </nav>
