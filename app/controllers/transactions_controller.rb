@@ -2,12 +2,16 @@ class TransactionsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_transaction, only: %i[show edit update destroy]
 
-  def index
-    @transactions = Transaction.all
-    @category = Category.find(params[:category_id])
+ def index
+  @category = Category.find_by(id: params[:category_id])
+  if @category
     @transactions = @category.transactions.order(created_at: :desc)
     @total = @category.transactions.sum(:amount)
+  else
+    flash[:error] = "Category not found"
+    redirect_to categories_path
   end
+end
 
   def show; end
 
