@@ -10,9 +10,9 @@
       <h5 class="text-muted"><%= category.name %></h5>
       </div>
 
-      <div >
-      <p class="fs-3"><%= category.transactions.sum(:amount)%></p>
-      </div>
+      <div class="amount">
+  <p>$ <%= number_with_precision(category.transactions.sum(:amount), precision: 2, delimiter: ',') %></p>
+</div>
       </div>
     </div>
   <% end %>

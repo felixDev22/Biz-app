@@ -42,6 +42,11 @@ body {
   text-decoration: none;
 }
 
+.amount p {
+  color: black;
+  font-weight: 700;
+}
+
 .btn-primary-custom:hover {
   color: white;
   background-color: var(---color);
