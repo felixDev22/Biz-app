@@ -1,0 +1,10 @@
+.nav {
+  padding: 1rem 0.5rem;
+  color: #fff;
+  background-color: #3778c2;
+  justify-content: space-between;
+}
+
+.sign-out {
+  display: flex;
+}
