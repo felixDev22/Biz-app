@@ -8,7 +8,7 @@ class TransactionsController < ApplicationController
       @transactions = @category.transactions.order(created_at: :desc)
       @total = @category.transactions.sum(:amount)
     else
-      flash[:error] = "Category not found"
+      flash[:error] = 'Category not found'
       redirect_to categories_path
     end
   end
