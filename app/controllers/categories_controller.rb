@@ -1,14 +1,17 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_category, only: %i[show edit update destroy]
 
   def index
     @categories = Category.all
+    @transactions = Transaction.order(created_at: :desc)
   end
 
   def show; end
 
   def new
     @category = Category.new
+    @category = current_user.categories.new
   end
 
   def edit; end
@@ -16,6 +19,7 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(category_params)
     @category.user_id = current_user
+    @category = current_user.categories.build(category_params)
 
     respond_to do |format|
       if @category.save
