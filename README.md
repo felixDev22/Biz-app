@@ -1,3 +1,9 @@
+<div align="center">
+
+  <img src="./app/assets/images/BIZZ-01.png" alt="logo" width="80"  height="auto" />
+  
+</div>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
