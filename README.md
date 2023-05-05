@@ -53,7 +53,7 @@ Bizz App is the ultimate tool for managing your expenses and keeping your financ
 
 ### Loom Video <a name="Loom Video"></a>
 
-The loom video can be found [here](https://www.loom.com/share/8eab5033bfe94142b7420f4991e8b598)
+The loom video can be found [here](https://www.loom.com/share/136c4e25972f4b1cbad0c7ddbe79db04)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
