@@ -2,7 +2,6 @@ databases:
   - name: Bizz-app
     databaseName: biz_app_development
     user: postgres
-    password: 316
 
 services:
   - type: web
