@@ -14,16 +14,15 @@ RSpec.describe 'Categories', type: :feature do
     expect(page).to have_content('New category')
   end
 
- scenario 'create new category' do
-  visit new_category_path
-  fill_in('Name', with: 'Travel')
-  expect(page).to have_css("input[type='file']")
+  scenario 'create new category' do
+    visit new_category_path
+    fill_in('Name', with: 'Travel')
+    expect(page).to have_css("input[type='file']")
 
-  fill_in 'Name', with: 'Travel'
-  page.attach_file(Rails.root.join('spec', 'fixtures', 'icons', 'uber.png'), visible: false)
-  click_button 'Save'
+    fill_in 'Name', with: 'Travel'
+    page.attach_file(Rails.root.join('spec', 'fixtures', 'icons', 'uber.png'), visible: false)
+    click_button 'Save'
 
-  expect(page).to have_content('Category was successfully created')
-end
-
+    expect(page).to have_content('Category was successfully created')
+  end
 end
