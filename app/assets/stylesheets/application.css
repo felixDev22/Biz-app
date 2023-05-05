@@ -7,6 +7,10 @@ body {
   background: #fcfcfc;
 }
 
+.container {
+  margin-top: 10px;
+}
+
 .splash {
   display: flex;
   flex-direction: column;
@@ -28,7 +32,7 @@ body {
 }
 
 .splash p {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   margin-bottom: 60px;
   font-weight: 600;
 }
@@ -75,4 +79,14 @@ body {
 
 .new-form {
   margin-top: 2rem;
+}
+
+footer {
+  color: white;
+  background-color: var(--green-color);
+  font-size: 1rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem 3rem;
+  margin-top: 60px;
 }
