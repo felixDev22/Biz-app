@@ -51,15 +51,15 @@ Bizz App is the ultimate tool for managing your expenses and keeping your financ
   </ul>
 </details>
 
-### Live Link <a name="Live link"></a>
+### Loom Video <a name="Loom Video"></a>
 
-The hosted app can be found [here](https://bizz-app.onrender.com)
+The loom video can be found [here](https://www.loom.com/share/8eab5033bfe94142b7420f4991e8b598)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Loom Video <a name="Loom Video"></a>
+### Live Link <a name="Live link"></a>
 
-The loom video can be found [here]()
+The hosted app can be found [here](https://bizz-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- Features -->
