@@ -5,9 +5,9 @@
       <p>CATEGORIES</p>
     </div>
 
-    <div class="d-flex  gap-3">
+    <div class="d-flex flex-column gap-3">
     <%= link_to "New category", new_category_path, class: "new-cate" %>
-      <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "form-control me-2 p-3" %>
+      <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "sign-out" %>
     </div>
   </div>
 
@@ -22,4 +22,7 @@
       <% end %>
     <% end %>
   </div>
+  <footer>
+  <p>@ bizzApp 2023</p>
+  </footer>
 </main>

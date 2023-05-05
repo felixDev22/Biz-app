@@ -1,15 +1,4 @@
-<div class="header">
-  <%= link_to categories_path, class: "back-link" do %>
-    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class:"w-25") %>
-
-    <i class="bi bi-arrow-left"></i>
-  <% end %>
-  <p>TRANSACTIONS</p>
-  <i class="bi bi-list"></i>
-  <div>
-    <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "form-control me-2 p-3" %>
-  </div>
-</div>
+<%= render partial: 'partials/header', locals: { page: 'TRANSACTIONS' } %>
 <p style="color: green"><%= notice %></p>
 <div id="transactions">
   <% if @transactions.empty? %>
