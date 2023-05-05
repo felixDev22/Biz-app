@@ -23,7 +23,6 @@ default: &default
 
 development:
   <<: *default
-  # url: <%= ENV["DATABASE_URL"] %>
   database: biz_app_development
   username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
@@ -84,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: biz_app_production
-  username: <%= ENV['POSTGRES_USERNAME'] %>
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
