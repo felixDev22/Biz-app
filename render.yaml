@@ -1,4 +1,4 @@
-atabases:
+databases:
   - name: Bizz-app
     databaseName: biz_app_development
     user: postgres
