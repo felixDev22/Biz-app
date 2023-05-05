@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   context 'validation tests' do
-    first_user = User.create(name: 'Felix', email: 'test@gmail.com', password: 'test12345')
+    first_user = User.create(name: 'Felix', email: 'test55@gmail.com', password: 'test12345')
 
     it 'is is created succefully' do
       expect(first_user).to be_valid

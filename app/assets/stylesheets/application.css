@@ -7,6 +7,10 @@ body {
   background: #fcfcfc;
 }
 
+.container {
+  margin-top: 10px;
+}
+
 .splash {
   display: flex;
   flex-direction: column;

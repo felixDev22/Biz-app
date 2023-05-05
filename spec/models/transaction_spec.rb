@@ -5,9 +5,9 @@ RSpec.describe Transaction, type: :model do
     before(:each) do
       @user = User.create(id: 1, name: 'Felix', email: 'test@gmail.com', password: 'test12345')
       icon = fixture_file_upload(Rails.root.join('spec/fixtures/icons/uber.png'), 'image/png')
-      @category = Category.create(name: 'Travel', icon: icon, user_id: @user.id)
+      @category = Category.create(name: 'Travel', icon:, user_id: @user.id)
       @transaction = Transaction.create(name: 'Nairobi', amount: 380, author_id:  @user.id,
-      category_id: @category.id)
+                                        category_id: @category.id)
     end
 
     it 'is created successfully' do
