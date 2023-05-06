@@ -1,11 +1,18 @@
-
-<%= render partial: 'partials/header', locals: { page: 'EDITING CATEGORY' } %>
+<nav class="header">
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
+  <div>
+    <p> EDIT CATEGORY </p>
+  </div>
+  <div>
+    <%= link_to "Back", categories_path, class: "back" %>
+  </div>
+</nav>
 
 <%= render "form", category: @category %>
 
 <br>
 
 <div>
-  <%= link_to "Show this category", @category %> |
+  <%= link_to "Show this category", @category %>
   <%= link_to "Back to categories", categories_path %>
 </div>

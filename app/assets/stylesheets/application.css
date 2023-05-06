@@ -83,10 +83,10 @@ body {
   padding: 20px;
 }
 
-/* .icon img {
+.icon {
   object-fit: contain;
-  width: 20%;
-} */
+  width: 80%;
+}
 
 .text-center {
   margin-left: -200px;
@@ -139,6 +139,7 @@ footer {
   .icon img {
     width: 20%;
   }
+
   .splash-logo {
     width: 50%;
   }
