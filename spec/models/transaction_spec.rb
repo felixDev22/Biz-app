@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Transaction, type: :model do
   context 'validation tests' do
     before(:each) do
-      @user = User.create(id: 1, name: 'Felix', email: 'test@gmail.com', password: 'test12345')
+      @user = User.create(name: 'Felix', email: 'test@gmail.com', password: 'test12345')
       icon = fixture_file_upload(Rails.root.join('spec/fixtures/icons/uber.png'), 'image/png')
       @category = Category.create(name: 'Travel', icon:, user_id: @user.id)
       @transaction = Transaction.create(name: 'Nairobi', amount: 380, author_id:  @user.id,

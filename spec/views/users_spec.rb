@@ -8,11 +8,11 @@ RSpec.describe 'Users', type: :feature do
 
   scenario 'user can sign up' do
     visit new_user_registration_path
-    fill_in('Email', with: 'test01@gmail.com')
+    fill_in('Email', with: 'test316@gmail.com')
     fill_in('Name', with: 'Felix')
     fill_in('Password', with: 'test12345')
     fill_in('Password_confirmation', with: 'test12345')
-    click_button 'Next'
+    click_button(class: 'registration-button')
     expect(page).to have_content 'Welcome! You have signed up successfully.'
   end
 
@@ -21,7 +21,7 @@ RSpec.describe 'Users', type: :feature do
     visit new_user_session_path
     fill_in('Email', with: 'silver@gmail.com')
     fill_in('Password', with: 'silver12345')
-    click_button 'Next'
+    click_button(class: 'registration-button')
     expect(page).to have_content 'Signed in successfully.'
   end
 end
