@@ -1,6 +1,7 @@
 <div align="center">
 
-  <img src="./app/assets/images/BIZZ-01.png" alt="logo" width="80"  height="auto" />
+  <img src="./app/assets/images/BIZZ-01.png" alt="logo" width="150"  height="auto" />
+  <h2>Bizz App<h2>
   
 </div>
 
