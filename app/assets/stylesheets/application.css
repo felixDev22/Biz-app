@@ -7,6 +7,7 @@
 :root {
   --blue-color: #3778c2;
   --green-color: #5fb523;
+  --green-hover: #99e365;
 }
 
 body {
@@ -18,6 +19,11 @@ body {
   background-color: #3778c2;
   margin-bottom: 0;
   border-radius: 0;
+  color: #fff;
+}
+
+.container {
+  margin-top: 20%;
 }
 
 .splash {
@@ -28,7 +34,7 @@ body {
 }
 
 .splash-logo {
-  width: 25%;
+  width: 50%;
 }
 
 .logo {
@@ -90,12 +96,26 @@ body {
   margin-top: 2rem;
 }
 
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #fff;
+  padding: 1.2rem 2.7rem;
+}
+
+.actions:hover {
+  border: solid 3px #fff;
+  background-color: var(--green-hover);
+}
+
 footer {
   color: white;
   background-color: var(--green-color);
   font-size: 1rem;
   width: 100%;
-  height: auto;
-  padding: 1rem 3rem;
-  margin-top: 60px;
+  height: 100px;
+  padding: 1rem 2rem;
+  position: fixed;
+  bottom: 0;
 }
