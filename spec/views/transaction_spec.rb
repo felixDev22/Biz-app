@@ -6,7 +6,7 @@ RSpec.describe 'Transactions', type: :feature do
     visit new_user_session_path
     fill_in('Email', with: 'silver@gmail.com')
     fill_in('Password', with: 'silver12345')
-    click_button 'Next'
+    click_button(class: 'registration-button')
   end
 
   scenario 'create new category' do

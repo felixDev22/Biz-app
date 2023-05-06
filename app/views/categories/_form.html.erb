@@ -1,5 +1,5 @@
 <%= form_with(model: category) do |form| %>
-  <div class="new-form d-block justify-content-center">
+<div class="container">
   
 
   <% if category.errors.any? %>
@@ -24,9 +24,11 @@
       <%= form.file_field :icon, class:"form-control", type:"file", id:"formFile"%>
     </div>
   </div>
-
-    <div >
-      <%= form.submit "Save", class: "btn btn-secondary"%>
-    </div>
 </div>
+
+<footer>
+  <div class="actions" >
+      <%= form.submit "Save", class: "save-btn"%>
+    </div>
+  </footer>
 <% end %>

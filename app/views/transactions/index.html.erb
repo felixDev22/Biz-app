@@ -1,5 +1,16 @@
-<%= render partial: 'partials/header', locals: { page: 'TRANSACTIONS' } %>
+<nav class="header">
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
+  <div>
+    <p> TRANSACTIONS </p>
+  </div>
+  <div>
+    <%= link_to "Back", categories_path, class: "back" %>
+  </div>
+</nav>
+
 <p style="color: green"><%= notice %></p>
+
+<div class="container">
 <div id="transactions">
   <% if @transactions.empty? %>
     <div class="message">There are no transactions to display. Add one.</div>
@@ -9,14 +20,23 @@
     <% end %>
   <% end %>
 </div>
-<div class="total">
+
+<div class="total bg-info text-white">
   <h5>Total Amount:</h5>
   <p>$<%= @total %></p>
 </div>
-<div>
+
+<div class="mb-4">
   <%= link_to "New transaction", new_transaction_path, class: "btn btn-secondary" %>
 </div>
+
 <div>
-  <%= link_to "Show this transaction", @transaction %> |
-  <%= link_to "Back to transactions", transactions_path %>
+  <%= link_to "Show this transaction", @transaction %>
 </div>
+</div>
+
+<footer>
+<div class="actions">
+ <%= link_to "Back to transactions", transactions_path %>
+ </div>
+ </footer>
