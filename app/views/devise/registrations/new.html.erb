@@ -1,14 +1,9 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="registration-head">
-    <i class="bi bi-arrow-left"></i>
-    <p>REGISTER</p>
-    <div class="actions">
-      <%= f.submit "Next", class: "registration-button" %>
-    </div>
-  </div>
-  <div class="sign-color">
+  <%= render partial: 'partials/header', locals: { page: 'REGISTER' } %>
+
+  <div class="container">
     <div class="field form-div">
       <% f.label :email %>
       <%= f.email_field :email, id: "Email", autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
@@ -29,9 +24,16 @@
       <%= f.password_field :password_confirmation, id: "Password_confirmation", autocomplete: "new-password", placeholder: "Password Confirmation", class: "form-input" %>
     </div>
   </div>
-<% end %>
 
 <div class="registration-links">
   <div class="question">Already have an account?</div>
   <%= render "devise/shared/links" %>
 </div>
+
+<footer>
+<div class="actions">
+    <%= f.submit "Next", class: "registration-button" %>
+  </div>
+  </footer>
+
+<% end %>

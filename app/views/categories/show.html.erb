@@ -1,10 +1,18 @@
-<p style="color: green"><%= notice %></p>
-
+<p style="color: green", class="alert"><%= notice %></p>
+<%= render partial: 'partials/header', locals: { page: 'ADDED CATEGORY' } %>
+<div class="container">
 <%= render @category %>
 
+<div class="edit-delete">
 <div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
-
-  <%= button_to "Destroy this category", @category, method: :delete %>
+  <%= link_to "Edit category", edit_category_path(@category) %>
+  </div>
+  <%= link_to "Delete category", @category, method: :delete %>
 </div>
+
+</div>
+<footer>
+<div class="actions">
+ <%= link_to "Back to categories", categories_path %>
+ </div>
+ </footer>

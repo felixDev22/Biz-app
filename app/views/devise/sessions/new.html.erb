@@ -5,13 +5,13 @@
 
   <div class="sign-color container">
     <div class="field form-div">
-      <% f.label :email %>
-      <%= f.email_field :email,  id: "Email", autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
+      <%= f.label :email %>
+      <%= f.email_field :email,  id: "Email", autofocus: true, autocomplete: "email", required: true,  class: "form-input" %>
     </div>
 
     <div class="field form-div">
-      <% f.label :password %>
-      <%= f.password_field :password,  id: "Password", autocomplete: "current-password", placeholder: "Password", class: "form-input" %>
+      <%= f.label :password %>
+      <%= f.password_field :password,  id: "Password", autocomplete: "current-password",  class: "form-input" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
@@ -23,11 +23,13 @@
   </div>
 
   <div class="registration-links">
-  <div class="question">Don't have an account?</div><br />
-  <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-    <%= link_to "Sign up", new_registration_path(resource_name) %><br />
-  <% end %>
-</div>
+    <div class="question">Don't have an account?</div><br />
+      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+      <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    <% end %>
+  </div>
+
+
 
 
   <footer>
@@ -36,5 +38,3 @@
     </div>
   </footer>
 <% end %>
-
-

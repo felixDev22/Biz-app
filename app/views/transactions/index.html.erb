@@ -1,5 +1,6 @@
 <%= render partial: 'partials/header', locals: { page: 'TRANSACTIONS' } %>
 <p style="color: green"><%= notice %></p>
+<div class="container">
 <div id="transactions">
   <% if @transactions.empty? %>
     <div class="message">There are no transactions to display. Add one.</div>
@@ -19,4 +20,5 @@
 <div>
   <%= link_to "Show this transaction", @transaction %> |
   <%= link_to "Back to transactions", transactions_path %>
+</div>
 </div>

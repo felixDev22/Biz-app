@@ -2,10 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem;
   color: #fff;
   background-color: var(--blue-color);
+  position: sticky;
   top: 0;
+}
+
+.header p {
+  margin-bottom: 0;
 }
 
 .sign-out {
@@ -16,11 +21,6 @@
   background-color: white;
 }
 
-.logo-img {
-  width: 26%;
-}
-
-.text-center {
-  margin-left: -220px;
-  text-transform: capitalize;
+.logo {
+  width: 20%;
 }
