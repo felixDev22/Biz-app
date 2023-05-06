@@ -1,11 +1,22 @@
+<nav class="header">
 
-<%= render partial: 'partials/header', locals: { page: 'SHOW' } %>
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
+  <div>
+    <p> SHOW</p>
+  </div>
+  <div>
+    <%= link_to "Back", new_category_path, class: "back" %>
+  </div>
+
+</nav>
+
+
 
 <p style="color: green"><%= notice %></p>
 
-
+<div class="container">
 <%= render @transaction %>
-
+</div>
 
 <div class="edit-delete">
 <div> 

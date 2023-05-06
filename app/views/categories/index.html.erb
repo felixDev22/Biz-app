@@ -1,16 +1,18 @@
 <main class="main-style">
-  <div class="header">
+
+<nav class="header">
     <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
-    <div>
-      <p>CATEGORIES</p>
-    </div>
-
-    <div>
-      <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "sign-out" %>
-    </div>
+  <div>
+    <p> CATEGORIES </p>
   </div>
+  <div>
+    <%= link_to "Back", root_path, class: "back" %>
+  </div>
+</nav>
 
-  <p style="color: green"><%= notice %></p>
+<div class="text-capitalize ">
+    <h6> <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "sign-out  initialism text-danger" %></h6>
+    </div>
 
 <div class="container">
   <div id="categories">

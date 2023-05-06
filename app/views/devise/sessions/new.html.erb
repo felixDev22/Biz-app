@@ -1,7 +1,17 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="registration-head">
-    <p>REGISTER</p>
+ 
+<nav class="header">
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
+  <div>
+    <p> REGISTER </p>
   </div>
+  <div>
+    <%= link_to "Back", root_path, class: "back" %>
+  </div>
+</nav>
+
+
+
 
   <div class="sign-color container">
     <div class="field form-div">

@@ -5,8 +5,10 @@
   padding: 1rem 1rem;
   color: #fff;
   background-color: var(--blue-color);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header p {
@@ -24,3 +26,9 @@
 .logo {
   width: 20%;
 }
+
+/* @media (max-width: 600px) {
+  .header {
+    width: 20%;
+  }
+} */

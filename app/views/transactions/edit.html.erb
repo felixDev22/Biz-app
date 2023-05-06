@@ -1,4 +1,19 @@
-  <%= render partial: 'partials/header', locals: { page: 'EDITING TRANSACTION' } %>
+  
+  <nav class="header">
+
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
+  <div>
+    <p> EDIT TRANSACTION </p>
+  </div>
+  <div>
+    <%= link_to "Back", new_transaction_path, class: "back" %>
+  </div>
+
+</nav>
+  
+  
+
+
 <%= render "form", transaction: @transaction %>
 
 <br>

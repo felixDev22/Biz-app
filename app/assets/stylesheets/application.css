@@ -30,6 +30,7 @@ body {
 
 .container {
   margin-top: 15%;
+  overflow: hidden;
 }
 
 .splash {
@@ -40,7 +41,7 @@ body {
 }
 
 .splash-logo {
-  width: 50%;
+  width: 20%;
 }
 
 .new-cate {
@@ -82,10 +83,10 @@ body {
   padding: 20px;
 }
 
-.icon img {
+/* .icon img {
   object-fit: contain;
-  width: 50%;
-}
+  width: 20%;
+} */
 
 .text-center {
   margin-left: -200px;
@@ -119,6 +120,9 @@ footer {
   padding: 1rem 2rem;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .save-btn {
@@ -127,8 +131,15 @@ footer {
   outline: none;
 }
 
+.back {
+  color: #fff;
+}
+
 @media (max-width: 600px) {
   .icon img {
     width: 20%;
+  }
+  .splash-logo {
+    width: 50%;
   }
 }
