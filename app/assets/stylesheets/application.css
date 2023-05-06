@@ -22,8 +22,14 @@ body {
   color: #fff;
 }
 
+.edit-delete {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
 .container {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .splash {
@@ -35,10 +41,6 @@ body {
 
 .splash-logo {
   width: 50%;
-}
-
-.logo {
-  width: 15%;
 }
 
 .new-cate {
@@ -77,19 +79,17 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
-.card-img {
-  display: flex;
-  flex-basis: 20%;
+.icon img {
   object-fit: contain;
+  width: 50%;
 }
 
-.card-items {
-  display: flex;
-  flex-basis: 50%;
-  justify-content: space-between;
+.text-center {
+  margin-left: -200px;
+  text-transform: capitalize;
 }
 
 .new-form {
@@ -100,6 +100,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
   border: solid 1px #fff;
   padding: 1.2rem 2.7rem;
 }
@@ -118,4 +119,16 @@ footer {
   padding: 1rem 2rem;
   position: fixed;
   bottom: 0;
+}
+
+.save-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .icon img {
+    width: 20%;
+  }
 }

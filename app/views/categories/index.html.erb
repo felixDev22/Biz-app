@@ -5,14 +5,14 @@
       <p>CATEGORIES</p>
     </div>
 
-    <div class="d-flex flex-column gap-3">
-    <%= link_to "New category", new_category_path, class: "new-cate" %>
+    <div>
       <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "sign-out" %>
     </div>
   </div>
 
   <p style="color: green"><%= notice %></p>
 
+<div class="container">
   <div id="categories">
     <% if @categories.empty? %>
       <div class="message">There are no categories to display. Add one.</div>
@@ -22,7 +22,12 @@
       <% end %>
     <% end %>
   </div>
+  </div>
+
+
   <footer>
-  <p>@ bizzApp 2023</p>
+  <div class="actions">
+  <%= link_to "New category", new_category_path, class: "new-cate" %>
+  </div>
   </footer>
 </main>
