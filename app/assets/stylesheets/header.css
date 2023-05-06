@@ -5,6 +5,7 @@
   padding: 1rem 0.5rem;
   color: #fff;
   background-color: var(--blue-color);
+  top: 0;
 }
 
 .sign-out {

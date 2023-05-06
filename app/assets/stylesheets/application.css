@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --blue-color: #3778c2;
   --green-color: #5fb523;
@@ -7,8 +13,11 @@ body {
   background: #fcfcfc;
 }
 
-.container {
-  margin-top: 10px;
+.alert,
+.notice {
+  background-color: #3778c2;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .splash {
