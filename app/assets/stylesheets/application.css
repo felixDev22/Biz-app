@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-color: #3778c2;
+  --green-color: #5fb523;
+  --green-hover: #99e365;
+}
+
+body {
+  background: #fcfcfc;
+}
+
+.alert,
+.notice {
+  background-color: #3778c2;
+  margin-bottom: 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+.edit-delete {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.container {
+  margin-top: 15%;
+  overflow: hidden;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-logo {
+  width: 20%;
+}
+
+.new-cate {
+  color: white;
+  text-decoration: none;
+}
+
+.splash p {
+  font-size: 0.7rem;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.btn-primary-custom {
+  color: white;
+  background-color: var(--blue-color);
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.amount p {
+  color: black;
+  font-weight: 700;
+}
+
+.btn-primary-custom:hover {
+  color: white;
+  background-color: var(---color);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.icon {
+  object-fit: contain;
+  width: 80%;
+}
+
+.text-center {
+  margin-left: -200px;
+  text-transform: capitalize;
+}
+
+.new-form {
+  margin-top: 2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 1.2rem 2.7rem;
+}
+
+.actions:hover {
+  border: solid 3px #fff;
+  background-color: var(--green-hover);
+}
+
+footer {
+  color: white;
+  background-color: var(--green-color);
+  font-size: 1rem;
+  width: 100%;
+  height: 100px;
+  padding: 1rem 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.save-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.back {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .icon img {
+    width: 20%;
+  }
+
+  .splash-logo {
+    width: 50%;
+  }
+}

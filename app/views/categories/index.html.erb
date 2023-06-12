@@ -1,0 +1,35 @@
+<main class="main-style">
+
+<nav class="header">
+    <%= image_tag(image_path("BIZZ-01.png"), alt: "logo", class: "logo") %>
+  <div>
+    <p> CATEGORIES </p>
+  </div>
+  <div>
+    <%= link_to "Back", root_path, class: "back" %>
+  </div>
+</nav>
+
+<div class="text-capitalize ">
+    <h6> <%= link_to "sign out", destroy_user_session_path, method: :delete, class: "sign-out  initialism text-danger" %></h6>
+    </div>
+
+<div class="container">
+  <div id="categories">
+    <% if @categories.empty? %>
+      <div class="message">There are no categories to display. Add one.</div>
+    <% else %>
+      <% @categories.each do |category| %>
+        <%= render category %>
+      <% end %>
+    <% end %>
+  </div>
+  </div>
+
+
+  <footer>
+  <div class="actions">
+  <%= link_to "New category", new_category_path, class: "new-cate" %>
+  </div>
+  </footer>
+</main>
